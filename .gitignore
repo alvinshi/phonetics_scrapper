@@ -1,0 +1,6 @@
+.idea/
+env/
+input.xlsx
+output.xlsx
+bin/
+.DS_Store
