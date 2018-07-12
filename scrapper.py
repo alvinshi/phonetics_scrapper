@@ -106,7 +106,7 @@ class Scrapper:
             worksheet.cell(row=index+1, column=1, value=words[index])
             worksheet.cell(row=index+1, column=2, value=oxford_phonetics)
             worksheet.cell(row=index+1, column=3, value=longman_phonetics)
-            if index % 50 == 0 and index > 0:
+            if index % 10 == 0 and index > 0:
                 print("{} done".format(index + 1))
                 wb.save(self.OUTPUT_PATH)
         wb.save(self.OUTPUT_PATH)
